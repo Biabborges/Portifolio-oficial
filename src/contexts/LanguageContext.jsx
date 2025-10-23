@@ -60,7 +60,7 @@ export const translations = {
         {
           id: 2,
           titulo: 'Liderança',
-          instituicao: 'Aspire Institute',
+          instituicao: 'Aspire Institute for Harvard',
           periodo: '2025',
           tipo: 'Curso'
         },
@@ -121,7 +121,7 @@ export const translations = {
         {
           id: 1,
           nome: 'Aplicação com PLN para Bank of America',
-          imagem: './src/assets/cora.jpg',
+          imagem: '/cora.jpg',
           descricao: 'Este projeto foi o desenvolvimento de uma solução tecnológica para o Bank of America, focada na otimização do processo de acompanhamento de mudanças regulatórias. A solução foi desenvolvida utilizando tecnologias como React, JavaScript e Python, com integração de Processamento de Linguagem Natural (PLN) para automatizar a análise de documentos regulatórios.',
           tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
           linkCodigo: 'https://github.com/Biabborges/CORA',
@@ -129,7 +129,7 @@ export const translations = {
         {
           id: 2,
           nome: 'Aplicação Mobile para a FDC (Fundação Dom Cabral)',
-          imagem: './src/assets/FDC.jpg',
+          imagem: '/FDC.jpg',
           descricao: 'O "Dom Connect" é uma aplicação desenvolvida para dispositivos móveis cujo objetivo é facilitar a interação entre os CEOs cadastrados no programa da Fundação Dom Cabral, o CEOs Legacy. Este aplicativo móvel permitirá aos CEOs inserir seus projetos colaborativos, os quais estão vinculados a macro temas.',
           tags: ['Python', 'Apache Airflow', 'PostgreSQL', 'AWS'],
           linkCodigo: 'https://github.com/Biabborges/Dom-Connect',
@@ -137,7 +137,7 @@ export const translations = {
         {
           id: 3,
           nome: 'CSB Project Management',
-          imagem: './src/assets/CSB.svg',
+          imagem: '/CSB.svg',
           descricao: 'A CSB é uma solução voltada para a gestão e acompanhamento de projetos de desenvolvedores, conectando talentos a empresas de forma inteligente e colaborativa. Com uma interface moderna e intuitiva, permite criar, organizar e monitorar projetos em tempo real, centralizando tarefas, entregas, documentos e discussões.',
           tags: ['React', 'FastAPI', 'PostgreSQL', 'WebSockets'],
         },
@@ -209,7 +209,7 @@ export const translations = {
         {
           id: 2,
           titulo: 'Leadership',
-          instituicao: 'Aspire Institute',
+          instituicao: 'Aspire Institute for Harvard',
           periodo: '2025',
           tipo: 'Course'
         },
@@ -270,7 +270,7 @@ export const translations = {
         {
           id: 1,
           nome: 'NLP Application for Bank of America',
-          imagem: './src/assets/cora.jpg',
+          imagem: '/cora.jpg',
           descricao: 'This project was the development of a technological solution for Bank of America, focused on optimizing the process of tracking regulatory changes. The solution was developed using technologies such as React, JavaScript and Python, with Natural Language Processing (NLP) integration to automate the analysis of regulatory documents.',
           tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
           linkCodigo: 'https://github.com/Biabborges/CORA',
@@ -278,7 +278,7 @@ export const translations = {
         {
           id: 2,
           nome: 'Mobile Application for FDC (Dom Cabral Foundation)',
-          imagem: './src/assets/FDC.jpg',
+          imagem: '/FDC.jpg',
           descricao: '"Dom Connect" is an application developed for mobile devices whose objective is to facilitate interaction between CEOs registered in the Dom Cabral Foundation program, CEOs Legacy. This mobile app will allow CEOs to insert their collaborative projects, which are linked to macro themes.',
           tags: ['Python', 'Apache Airflow', 'PostgreSQL', 'AWS'],
           linkCodigo: 'https://github.com/Biabborges/Dom-Connect',
@@ -286,7 +286,7 @@ export const translations = {
         {
           id: 3,
           nome: 'CSB Project Management',
-          imagem: './src/assets/CSB.svg',
+          imagem: '/CSB.svg',
           descricao: 'CSB is a solution aimed at managing and monitoring developer projects, connecting talents to companies in an intelligent and collaborative way. With a modern and intuitive interface, it allows you to create, organize and monitor projects in real time, centralizing tasks, deliveries, documents and discussions.',
           tags: ['React', 'FastAPI', 'PostgreSQL', 'WebSockets'],
         },

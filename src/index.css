@@ -19,6 +19,13 @@ body {
   background-color: #F8F9FA;
 }
 
+/* Ajuste de zoom apenas para desktop */
+@media (min-width: 768px) {
+  body {
+    zoom: 0.8;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
