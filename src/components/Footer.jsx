@@ -14,22 +14,22 @@ const Footer = () => {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold font-heading mb-2">
+            <h3 className="text-xl sm:text-2xl font-bold font-heading mb-2">
               {t.footer.name}
             </h3>
-            <p className="text-accent-light">
+            <p className="text-sm sm:text-base text-accent-light">
               {t.footer.role}
             </p>
           </div>
 
-          <div className="flex gap-6">
+          <div className="flex gap-4 sm:gap-6">
             <a 
               href="https://www.linkedin.com/in/biancaborges"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              className="text-2xl sm:text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
               aria-label="LinkedIn"
             >
               <FaLinkedin />
@@ -38,14 +38,14 @@ const Footer = () => {
               href="https://github.com/biabborges"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              className="text-2xl sm:text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
               aria-label="GitHub"
             >
               <FaGithub />
             </a>
             <a 
               href="mailto:bianca@email.com"
-              className="text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              className="text-2xl sm:text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
               aria-label="Email"
             >
               <FaEnvelope />
@@ -54,7 +54,7 @@ const Footer = () => {
               href="https://wa.me/5511982447186"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              className="text-2xl sm:text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
               aria-label="WhatsApp"
             >
               <FaWhatsapp />
@@ -62,10 +62,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/20 my-8"></div>
+        <div className="border-t border-white/20 my-6 md:my-8"></div>
 
         <div className="text-center text-white/80">
-          <p className="flex items-center justify-center gap-2">
+          <p className="flex items-center justify-center gap-2 text-sm sm:text-base">
             {t.footer.copyright.replace('{year}', currentYear)}
           </p>
         </div>
