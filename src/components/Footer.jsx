@@ -1,7 +1,9 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaHeart, FaWhatsapp } from 'react-icons/fa';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -15,10 +17,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold font-heading mb-2">
-              Bianca Borges Lins
+              {t.footer.name}
             </h3>
             <p className="text-accent-light">
-              Desenvolvedor Frontend | Engenharia de Software
+              {t.footer.role}
             </p>
           </div>
 
@@ -48,6 +50,15 @@ const Footer = () => {
             >
               <FaEnvelope />
             </a>
+            <a 
+              href="https://wa.me/5511982447186"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl hover:text-accent-light transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp />
+            </a>
           </div>
         </div>
 
@@ -55,7 +66,7 @@ const Footer = () => {
 
         <div className="text-center text-white/80">
           <p className="flex items-center justify-center gap-2">
-            © {currentYear} Bianca Lins. Todos os direitos reservados.
+            {t.footer.copyright.replace('{year}', currentYear)}
           </p>
         </div>
       </div>

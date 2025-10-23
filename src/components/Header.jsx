@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGlobe } from 'react-icons/fa';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   const menuItems = [
-    { nome: 'Início', link: '#apresentacao' },
-    { nome: 'Experiência', link: '#experiencia' },
-    { nome: 'Portfólio', link: '#portfolio' },
-    { nome: 'Contato', link: '#footer' }
+    { nome: t.nav.home, link: '#apresentacao' },
+    { nome: t.nav.education, link: '#formacao' },
+    { nome: t.nav.experience, link: '#experiencia' },
+    { nome: t.nav.portfolio, link: '#portfolio' },
+    { nome: t.nav.contact, link: '#footer' }
   ];
 
   const toggleMenu = () => {
@@ -39,6 +42,16 @@ const Header = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-colors font-medium"
+                aria-label="Toggle language"
+              >
+                <FaGlobe className="text-lg" />
+                <span className="uppercase">{language}</span>
+              </button>
+            </li>
           </ul>
 
           <button 
@@ -63,6 +76,16 @@ const Header = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-colors font-medium w-full"
+                aria-label="Toggle language"
+              >
+                <FaGlobe className="text-lg" />
+                <span className="uppercase">{language}</span>
+              </button>
+            </li>
           </ul>
         )}
       </nav>
